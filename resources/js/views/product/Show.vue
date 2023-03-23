@@ -501,7 +501,7 @@ export default {
       }
     },
     getProduct(id) {
-      this.axios.post(`/api/products/${id}`,{})
+      this.axios.get(`/api/products/${id}`)
           .then(res => {
             this.product = res.data.data
             console.log(this.product)

@@ -2,7 +2,7 @@
   <main class="overflow-hidden ">
     <!--Start Breadcrumb Style2-->
     <div class="breadcrumb-area"
-         style="background-image: url(assets/images/inner-pages/breadcum-bg.png);">
+         style="background-image: url(/assets/images/inner-pages/breadcum-bg.png);">
       <div class="container">
         <div class="row">
           <div class="col-xl-12">
@@ -30,7 +30,7 @@
               <ul>
                 <li><a href="#0" class="img-box">
                   <div class="inner"><img
-                      src="assets/images/shop/product-categories-v1-img1.png"
+                      src="/assets/images/shop/product-categories-v1-img1.png"
                       alt=""/></div>
                 </a>
                   <div class="title"><a href="#0">
@@ -39,7 +39,7 @@
                 </li>
                 <li><a href="#0" class="img-box">
                   <div class="inner"><img
-                      src="assets/images/shop/product-categories-v1-img2.png"
+                      src="/assets/images/shop/product-categories-v1-img2.png"
                       alt=""/></div>
                 </a>
                   <div class="title"><a href="#0">
@@ -48,7 +48,7 @@
                 </li>
                 <li><a href="#0" class="img-box">
                   <div class="inner"><img
-                      src="assets/images/shop/product-categories-v1-img3.png"
+                      src="/assets/images/shop/product-categories-v1-img3.png"
                       alt=""/></div>
                 </a>
                   <div class="title"><a href="#0">
@@ -57,7 +57,7 @@
                 </li>
                 <li><a href="#0" class="img-box">
                   <div class="inner"><img
-                      src="assets/images/shop/product-categories-v1-img4.png"
+                      src="/assets/images/shop/product-categories-v1-img4.png"
                       alt=""/></div>
                 </a>
                   <div class="title"><a href="#0">
@@ -66,7 +66,7 @@
                 </li>
                 <li><a href="#0" class="img-box">
                   <div class="inner"><img
-                      src="assets/images/shop/product-categories-v1-img5.png"
+                      src="/assets/images/shop/product-categories-v1-img5.png"
                       alt=""/></div>
                 </a>
                   <div class="title"><a href="#0">
@@ -75,7 +75,7 @@
                 </li>
                 <li><a href="#0" class="img-box">
                   <div class="inner"><img
-                      src="assets/images/shop/product-categories-v1-img6.png"
+                      src="/assets/images/shop/product-categories-v1-img6.png"
                       alt=""/></div>
                 </a>
                   <div class="title"><a href="#0">
@@ -209,7 +209,7 @@
                               :to="{name: 'products.show', params: {id: product.id}}" class="d-block"><img
                               :src="product.product_images[0].url"
                               class="first-img" alt=""/> <img
-                              :src="product.product_images[1] ? product.product_images[1].url : `assets/images/home-three/productss2-hover-1.png`"
+                              :src="product.product_images[1] ? product.product_images[1].url : `/assets/images/home-three/productss2-hover-1.png`"
                               alt="" class="hover-img"/>
                           </router-link>
                             <div class="products-grid-one__badge-box"> <span
@@ -304,15 +304,15 @@
                                       </div>
                                     </div>
                                     <div class="payment-method"><a href="#0"> <img
-                                        src="assets/images/payment_method/method_1.png"
+                                        src="/assets/images/payment_method/method_1.png"
                                         alt=""> </a>
                                       <a href="#0"> <img
-                                          src="assets/images/payment_method/method_2.png"
+                                          src="/assets/images/payment_method/method_2.png"
                                           alt=""> </a> <a href="#0"> <img
-                                          src="assets/images/payment_method/method_3.png"
+                                          src="/assets/images/payment_method/method_3.png"
                                           alt=""> </a>
                                       <a href="#0"> <img
-                                          src="assets/images/payment_method/method_4.png"
+                                          src="/assets/images/payment_method/method_4.png"
                                           alt=""> </a></div>
                                   </div>
                                 </div>

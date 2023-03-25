@@ -369,17 +369,22 @@ export default {
     },
     computed: {
         getCartCount() {
-            return this.products.length;
+            return (this.products) ? this.products.length : 0;
         },
         getWLCount() {
-            return this.wl.length;
+            return (this.wl) ? this.wl.length : 0;
         },
         subtotal() {
             let sum = 0;
-            this.products.forEach(productInCart => {
-                sum += productInCart.price * productInCart.qty;
-            })
-            return sum;
+            if (this.products) {
+                this.products.forEach(productInCart => {
+                    sum += productInCart.price * productInCart.qty;
+                })
+                return sum;
+            }
+            else {
+                return 0;
+            }
         }
     },
     mounted() {

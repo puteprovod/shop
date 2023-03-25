@@ -369,6 +369,7 @@ export default {
             const wishList = JSON.parse(localStorage.getItem('wishlist'));
             console.log(this.products);
             console.log(wishList);
+            if (wishList)
             this.products.forEach(productInCart => {
                 let returnVar = false;
                 wishList.forEach(wishProduct => {

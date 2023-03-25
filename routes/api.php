@@ -19,7 +19,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::post('/orders', \App\Http\Controllers\API\Order\StoreController::class);
 Route::post('/products', \App\Http\Controllers\API\Product\IndexController::class);
+Route::post('/wishlist', \App\Http\Controllers\API\Product\WLController::class);
 Route::post('/products/random', \App\Http\Controllers\API\Product\RandomController::class);
 Route::post('/products/filters', \App\Http\Controllers\API\Product\FilterListController::class);
 Route::post('/products/{product}', \App\Http\Controllers\API\Product\ShowController::class);

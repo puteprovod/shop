@@ -367,8 +367,6 @@ export default {
     methods: {
         drawWLicons() {
             const wishList = JSON.parse(localStorage.getItem('wishlist'));
-            console.log(this.products);
-            console.log(wishList);
             if (wishList)
             this.products.forEach(productInCart => {
                 let returnVar = false;
@@ -377,10 +375,8 @@ export default {
                         returnVar = true;
                 })
                 if (!returnVar) {
-                    console.log(false);
                     document.getElementById(`like${productInCart.id}`).innerHTML = '&#9734;<span>add to wishlist</span>';
                 } else {
-                    console.log(true);
                     document.getElementById(`like${productInCart.id}`).innerHTML = '&#9733;<span>remove from wishlist</span>';
                 }
             })
@@ -425,7 +421,6 @@ export default {
                 let i=0;
                 wishList.forEach(productInCart => {
                     if (productInCart.id === product.id) {
-                        console.log(i)
                         wishList.splice(i,1)
                         newProduct = null
                     }
